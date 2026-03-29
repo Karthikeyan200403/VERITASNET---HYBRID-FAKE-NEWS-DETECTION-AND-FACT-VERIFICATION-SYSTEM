@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Help & FAQ - VeritasNet</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #0b3d91;
+    padding: 15px 40px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 50vh;
+    background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa')
+                no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* FAQ SECTION */
+.container {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.faq {
+    background: #f5f5f5;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.question {
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.answer {
+    display: none;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* BUTTON */
+.btn {
+    background: #1e5eff;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 4px;
+    border: none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>VeritasNet</h2>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="overlay">
+        <h1>Help & FAQ</h1>
+        <p>Find answers to common questions about VeritasNet</p>
+    </div>
+</div>
+
+<!-- FAQ -->
+<div class="container">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+        <div class="question" onclick="toggle(this)">How does VeritasNet verify news?</div>
+        <div class="answer">
+            It uses AI models and trusted data sources to validate claims.
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question" onclick="toggle(this)">How is the credibility score calculated?</div>
+        <div class="answer">
+            Based on source reliability, content analysis, and fact-checking databases.
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question" onclick="toggle(this)">Can I submit an article for verification?</div>
+        <div class="answer">
+            Yes, users can enter any claim in the verification form.
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question" onclick="toggle(this)">Is VeritasNet free to use?</div>
+        <div class="answer">
+            Basic verification is free, with premium features planned.
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question" onclick="toggle(this)">How can I report a problematic source?</div>
+        <div class="answer">
+            Use the contact page to submit reports.
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question" onclick="toggle(this)">How do I contact support?</div>
+        <div class="answer">
+            Visit the Contact page and submit your query.
+        </div>
+    </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+function toggle(element) {
+    let answer = element.nextElementSibling;
+    answer.style.display =
+        answer.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>

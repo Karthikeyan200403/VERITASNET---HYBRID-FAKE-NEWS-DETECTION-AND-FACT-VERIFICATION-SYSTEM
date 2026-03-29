@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact - VeritasNet</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #0b3d91;
+    padding: 15px 40px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 50vh;
+    background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f')
+                no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* FORM */
+.container {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-box {
+    background: #f5f5f5;
+    padding: 25px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    background: #1e5eff;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>VeritasNet</h2>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="overlay">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you</p>
+    </div>
+</div>
+
+<!-- FORM -->
+<div class="container">
+    <div class="form-box">
+        <h2>Get in Touch</h2>
+
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+
+        <button class="btn">Send Message</button>
+    </div>
+</div>
+
+</body>
+</html>

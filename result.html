@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Verification Result - VeritasNet</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f4f8;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #0b3d91;
+    padding: 15px 30px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* CONTAINER */
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* RESULT CARD */
+.card {
+    background: white;
+    padding: 25px;
+    width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* RESULT HEADER */
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.false {
+    color: red;
+    font-weight: bold;
+}
+
+.score {
+    background: #ff4d4d;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+/* SECTIONS */
+.section {
+    margin-top: 15px;
+}
+
+.tags span {
+    display: inline-block;
+    background: #e6e6e6;
+    padding: 6px 10px;
+    margin: 5px 5px 0 0;
+    border-radius: 4px;
+    font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div><b>VeritasNet</b></div>
+
+    <div>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="verify.html">Verify</a>
+        <a href="news.html">News</a>
+        <a href="login.html">Logout</a>
+    </div>
+</div>
+
+<!-- RESULT -->
+<div class="container">
+    <div class="card">
+
+        <!-- HEADER -->
+        <div class="result-header">
+            <h2>RESULT: <span class="false">FALSE</span></h2>
+            <div class="score">45% Credible</div>
+        </div>
+
+        <!-- EXPLANATION -->
+        <div class="section">
+            <h3>Explanation</h3>
+            <p>
+                The claim is contradicted by multiple verified sources. 
+                Global climate reports and government data do not support this statement.
+            </p>
+        </div>
+
+        <!-- SOURCES -->
+        <div class="section">
+            <h3>Sources Checked</h3>
+            <div class="tags">
+                <span>IPCC Report</span>
+                <span>Reuters</span>
+                <span>World Bank</span>
+                <span>NASA</span>
+            </div>
+        </div>
+
+        <!-- RELATED -->
+        <div class="section">
+            <h3>Related Evidence</h3>
+            <p>• IPCC 2023 Climate Report — No evidence of an imminent ice age</p>
+            <p>• Reuters Fact Check — Viral claim about a new ice age spreads misinformation</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

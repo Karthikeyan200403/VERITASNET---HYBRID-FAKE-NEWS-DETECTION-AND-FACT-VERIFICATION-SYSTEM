@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>News Feed - VeritasNet</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f4f8;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #0b3d91;
+    padding: 15px 30px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* CONTAINER */
+.container {
+    padding: 30px;
+}
+
+/* CARD */
+.news-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* LEFT */
+.news-left {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background: #e6f0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+/* RIGHT BADGE */
+.badge {
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+}
+
+/* COLORS */
+.green {
+    background: #28a745;
+}
+
+.red {
+    background: #dc3545;
+}
+
+.yellow {
+    background: #f0ad4e;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div><b>VeritasNet</b></div>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="verify.html">Verify</a>
+        <a href="news.html">News</a>
+        <a href="login.html">Logout</a>
+    </div>
+</div>
+
+<!-- NEWS -->
+<div class="container">
+
+    <!-- NEWS 1 -->
+    <div class="news-card">
+        <div class="news-left">
+            <div class="icon">📰</div>
+            <div>
+                <h4>New Climate Policy Announced</h4>
+                <p>The government unveils a new policy to reduce carbon emissions by 50%.</p>
+                <small>Source: Reuters • 2 hours ago</small>
+            </div>
+        </div>
+        <div class="badge green">82% Reliable</div>
+    </div>
+
+    <!-- NEWS 2 -->
+    <div class="news-card">
+        <div class="news-left">
+            <div class="icon">📢</div>
+            <div>
+                <h4>Ancient City Found Under the Ocean</h4>
+                <p>Archaeologists claim discovery of a 10,000-year-old city beneath the sea.</p>
+                <small>Source: Viral Post • 5 hours ago</small>
+            </div>
+        </div>
+        <div class="badge red">45% Unreliable</div>
+    </div>
+
+    <!-- NEWS 3 -->
+    <div class="news-card">
+        <div class="news-left">
+            <div class="icon">🔬</div>
+            <div>
+                <h4>New Study Links Coffee to Longer Life</h4>
+                <p>Research suggests coffee consumption may increase lifespan.</p>
+                <small>Source: Health Journal • 1 day ago</small>
+            </div>
+        </div>
+        <div class="badge green">78% Reliable</div>
+    </div>
+
+</div>
+
+</body>
+</html>

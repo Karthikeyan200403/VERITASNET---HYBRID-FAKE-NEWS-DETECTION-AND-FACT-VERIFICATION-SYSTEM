@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About - VeritasNet</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #0b3d91;
+    padding: 15px 40px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 60vh;
+    background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa')
+                no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* CONTENT */
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>VeritasNet</h2>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="overlay">
+        <h1>About VeritasNet</h1>
+        <p>Fighting misinformation using AI-powered truth verification</p>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+    <h2>Our Mission</h2>
+    <p>
+        VeritasNet aims to combat fake news and misinformation by combining 
+        artificial intelligence with real-time fact verification systems.
+    </p>
+
+    <div class="features">
+        <div class="card">
+            <h3>AI Analysis</h3>
+            <p>Detects fake news using NLP models</p>
+        </div>
+
+        <div class="card">
+            <h3>Trusted Sources</h3>
+            <p>Verifies claims using reliable databases</p>
+        </div>
+
+        <div class="card">
+            <h3>Real-Time</h3>
+            <p>Instant verification results</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

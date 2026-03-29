@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup - VeritasNet</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f4f8;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 15px 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-weight: bold;
+            color: #0b3d91;
+        }
+
+        .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .start-btn {
+            background: #0b3d91;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        /* FORM */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 85vh;
+        }
+
+        .signup-box {
+            background: white;
+            padding: 30px;
+            width: 350px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .signup-box h2 {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .signup-btn {
+            width: 100%;
+            padding: 10px;
+            background: #1e5eff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .login-link {
+            margin-top: 12px;
+            font-size: 13px;
+        }
+
+        .login-link a {
+            color: #1e5eff;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">VeritasNet</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="article.html">Features</a>
+            <a href="help.html">Help</a>
+        </div>
+    </div>
+
+    <!-- SIGNUP FORM -->
+    <div class="container">
+        <div class="signup-box">
+            <h2>Create Account</h2>
+
+            <input type="text" placeholder="Enter your full name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Create a password">
+
+            <a href="dashboard.html">
+    <button class="signup-btn">Sign Up</button>
+</a>
+
+            <div class="login-link">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
